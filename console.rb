@@ -1,5 +1,5 @@
+require_relative('models/space_cowboys.rb')
 require('pry')
-require_relative('db/space_cowboys.rb')
 
 bounty_1 = Bounty.new(
   {

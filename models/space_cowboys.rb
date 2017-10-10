@@ -44,8 +44,8 @@ class Bounty
     db.prepare("select", sql)
     bounties_array = db.exec_prepared("select", values)
     db.close()
-    bounties_compiled = bounties_array.map { |bounty| Bounty.new(bounty) }
-    return bounties_compiled
+    @bounties_compiled = bounties_array.map { |bounty| Bounty.new(bounty) }
+    return @bounties_compiled
   end
 
   def delete()
@@ -77,6 +77,15 @@ class Bounty
       db.prepare("update", sql)
       db.exec_prepared("update", values)
       db.close()
+  end
+
+
+  def self.find(id)
+    for bounti in @bounties_compiled
+      if bounti.id == id
+         return bounti
+      end
+    end
   end
 
 end

@@ -1,4 +1,4 @@
-Homework
+
 
 You are going to make a table for tracking bounties for Space Cowboys.
 

@@ -87,5 +87,4 @@ class Bounty
       end
     end
   end
-
 end

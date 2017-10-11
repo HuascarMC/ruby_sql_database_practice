@@ -81,9 +81,9 @@ class Bounty
 
 
   def self.find(id)
-    for bounti in @bounties_compiled
-      if bounti.id == id
-         return bounti
+    for bounty in @bounties_compiled
+      if bounty.id == id
+         return bounty
       end
     end
   end
